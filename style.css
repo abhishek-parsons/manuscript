@@ -1,19 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap");
 
+article {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .container {
   display: grid;
   grid-gap: 16px;
-  padding: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  margin: 0px 20px;
+
+  grid-template-columns: repeat(auto-fill, 500px);
   grid-template-rows: 100vh;
-  grid-auto-flow: column;
+  grid-auto-flow: column dense;
   grid-auto-columns: minmax(500px, 1fr);
-  height: 100%;
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+body {
+  font-family: "Karma";
+  overflow-y: hidden;
+  margin-bottom: 100px;
+  background-color: #f8f2ec;
+  color: #514256;
+}
+
+mark {
+  background-color: #dfd3c3;
 }
 
 .title {
   font-family: "Yatra One";
   font-size: 64px;
+  line-height: 65px;
+  margin-bottom: 20px;
 }
 
 .subtitle {
@@ -22,5 +43,5 @@
 }
 
 .muted {
-  color: #919191;
+  color: #a89dad;
 }
