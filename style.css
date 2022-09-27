@@ -1,9 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+
 .container {
   display: grid;
   grid-gap: 16px;
   padding: 16px;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-rows: 100vh;
   grid-auto-flow: column;
   grid-auto-columns: minmax(500px, 1fr);
-  overflow-x: auto;
+  height: 100%;
+}
+
+.title {
+  font-family: "Yatra One";
+  font-size: 64px;
+}
+
+.subtitle {
+  font-family: "Yatra One";
+  font-size: 22px;
+}
+
+.muted {
+  color: #919191;
 }
